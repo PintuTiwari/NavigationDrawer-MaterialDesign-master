@@ -1,0 +1,1333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/layout_main_traning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/clickhere"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                style="@style/MyButton"
+                android:clickable="true"
+                android:text="Click here to enter rent paid details" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:text="House Rent Paid" />
+
+         <!--   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="House Rent\nPaid"
+                    style="@style/MyTextView"
+                    android:padding="5dp"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/firstedittext"
+                    android:text="0"
+                    android:padding="5dp"
+                    style="@style/MyTextView"
+                    android:layout_centerInParent="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    style="@style/MyTextView"
+                    android:layout_alignParentRight="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    style="@style/MyTextView"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>-->
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="House Rent\nPaid"
+                    style="@style/MyTextView"
+                    android:id="@+id/houserelative"
+                    android:layout_alignParentLeft="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/declarationamount"
+                    style="@style/TextLabel"
+                    android:text="0"
+                    android:layout_centerInParent="true"/>
+                   <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                       android:layout_marginLeft="210dp"
+                       android:theme="@style/TextLabel">
+                    <EditText
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="8dp"
+                        android:ellipsize="start"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:background="@drawable/editextbg"
+                        android:id="@+id/houserentpaid" />
+                </android.support.design.widget.TextInputLayout>
+
+          <LinearLayout
+                    android:id="@+id/LinearLayout02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="10dp"
+                    android:gravity="end">
+
+                    <ImageView
+                        android:id="@+id/upload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_file_upload_black_24dp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+          <!--  <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/layout_relative"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="House Rent Paid"
+                    style="@style/MyTextView" />
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/MyTextView"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/declarationamount"
+                        android:text=""/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="8dp"
+                        android:ellipsize="start"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:background="@drawable/editextbg"
+                        android:id="@+id/houserentpaid" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>-->
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:text="Deductions" />
+
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/layout_main_traning1"
+                android:orientation="horizontal"
+
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Entertainment\nallowance"
+                    style="@style/MyTextView" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/damounteallowance"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:ellipsize="start"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:background="@drawable/editextbg"
+                        android:id="@+id/eallowance" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:text="Section 80C"/>
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="LIC premium paid"
+                    style="@style/MyTextView" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/damountlicpremium"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:theme="@style/MyTextView">
+                    <EditText
+                        android:id="@+id/licpremium"
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:ellipsize="start"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:background="@drawable/editextbg" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    style="@style/MyTextView"
+                    android:text="Public provident\nfund" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/damountprovidentfund"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="8dp"
+                        android:ellipsize="start"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:background="@drawable/editextbg"
+                        android:id="@+id/providentfund" />
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    style="@style/MyTextView"
+                    android:text="Approved super\nannuation fund" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/damountapprovedfund"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextLabel"
+                    android:gravity="right">
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:background="@drawable/editextbg"
+                        android:id="@+id/approvedfund" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    style="@style/MyTextView"
+                    android:text="Any sum paid on\nhousing document" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/damounthdocument"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:background="@drawable/editextbg"
+                        android:id="@+id/hdocument" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="3dp"
+                    style="@style/MyTextView"
+                    android:text="PF deducted by\nprevious employer	" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/damountpfdeductedpreviousemployer"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:background="@drawable/editextbg"
+                        android:id="@+id/pfdeductedpreviousemployer"
+                        android:imeOptions="actionNext"
+                        />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    style="@style/MyTextView"
+                    android:layout_marginLeft="3dp"
+                    android:text="NSC" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/damountnsc"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/editextbg"
+                        android:id="@+id/nsc"
+                        android:gravity="center"
+                        android:imeOptions="actionNext" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="3dp"
+                    style="@style/MyTextView"
+                    android:text="ULIP" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/damountulip"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/editextbg"
+                        android:id="@+id/ulip"
+                        android:gravity="center"
+                        android:imeOptions="actionNext" />
+
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    style="@style/MyTextView"
+                    android:text="Contribution to\npension fund	" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/damountcontributionpensionfund"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:gravity="right"
+
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/editextbg"
+                        android:id="@+id/contributionpensionfund"
+                        android:imeOptions="actionNext"
+                        />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    style="@style/MyTextView"
+                    android:text="Contribution to\nELSS" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/damountcontributionelss"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:gravity="right"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:background="@drawable/editextbg"
+                        android:id="@+id/contributionelss"
+                        android:imeOptions="actionNext"
+                        />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    style="@style/MyTextView"
+                    android:text="Tution fees paid" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/damounttutionfeespaid"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/editextbg"
+                        android:id="@+id/tutionfeespaid"
+                        android:gravity="center"
+                        android:imeOptions="actionNext" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    style="@style/MyTextView"
+                    android:text="Repayment of\nhousing loan	" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/damountrepaymenthousingloan"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/editextbg"
+                        android:id="@+id/repaymenthousingloan"
+                        android:gravity="center"
+                        android:imeOptions="actionNext" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    style="@style/MyTextView"
+                    android:text="Investment in\nmutual fund	" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/damountinvestmentmutualfund"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/editextbg"
+                        android:id="@+id/investmentmutualfund"
+                        android:gravity="center"
+                        android:imeOptions="actionNext" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    style="@style/MyTextView"
+                    android:text="Others" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/damountothers"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/editextbg"
+                        android:id="@+id/others"
+                        android:gravity="center"
+                        android:imeOptions="actionNext" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:text="Aggregate of Deductible amounts under Chapter VI - A" />
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/RelativeLayout01"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/cardtitel1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Medical insurance\npremium (Mediclaim)"
+                    style="@style/MyTextView" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/damountmedicalinsurancepremium"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:theme="@style/MyTextView">
+                    <EditText
+                        android:id="@+id/medicalinsurancepremium"
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:ellipsize="start"
+                        android:inputType="number"
+                        android:gravity="center"
+
+                        android:background="@drawable/editextbg"/>
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    style="@style/MyTextView"
+                    android:text="Repayment of loan\ntaken for\nhigher education" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/damountpaymentofloan"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="8dp"
+                        android:ellipsize="start"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:background="@drawable/editextbg"
+                        android:id="@+id/paymentofloan" />
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    style="@style/MyTextView"
+                    android:text="Donations to certain\nfunds,charitable\ninstitutions" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/damountdonationcertain"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextLabel"
+                    android:gravity="right">
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+
+                        android:background="@drawable/editextbg"
+                        android:id="@+id/donationcertain" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    style="@style/MyTextView"
+                    android:text="80D (Self, Spouse\nand Kids)" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/damountselfspouse"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:background="@drawable/editextbg"
+                        android:id="@+id/selfspouse" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="3dp"
+                    style="@style/MyTextView"
+                    android:text="80D Mediclaim\n(Parents)" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/damountmediclaim"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:background="@drawable/editextbg"
+                        android:id="@+id/mediclaim"
+                        android:imeOptions="actionNext"
+                        />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    style="@style/MyTextView"
+                    android:layout_marginLeft="3dp"
+                    android:text="Income from \nHousing Property\n[Let Out]" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/damountincomefromhousing"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/editextbg"
+                        android:id="@+id/incomefromhousing"
+                        android:gravity="center"
+                        android:imeOptions="actionNext" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="3dp"
+                    style="@style/MyTextView"
+                    android:text="Income from\nOther Sources" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/damountincomefrom"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/editextbg"
+                        android:id="@+id/incomefrom"
+                        android:gravity="center"
+                        android:imeOptions="actionNext" />
+
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    style="@style/MyTextView"
+                    android:text="Capital Gains" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/damountcapitalgains"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:gravity="right"
+
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/editextbg"
+                        android:id="@+id/capitalgains"
+                        android:imeOptions="actionNext"
+                        />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    style="@style/MyTextView"
+                    android:text="Interest on Housing\nProperty - [Let Out]" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/damountinteresthousingproperty"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:gravity="right"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:background="@drawable/editextbg"
+                        android:id="@+id/interesthousingproperty"
+                        android:imeOptions="actionNext" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    style="@style/MyTextView"
+                    android:text="Interest on Housing \n Property\n[Residential]\n(Max Upto 1,50,000)" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/damountinteresthousingres"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="8dp"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/editextbg"
+                        android:id="@+id/interesthousingres"
+                        android:gravity="center"
+                        android:imeOptions="actionNext"
+
+                        />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:text="Medical" />
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    style="@style/MyTextView"
+                    android:text="Total Amount Of\nMedical Bill Claimed" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dtotalamount"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/editextbg"
+                        android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:id="@+id/totalamount"/>
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="3dp"
+                    style="@style/MyTextView"
+                    android:text="No Of children\nEligible forEducation" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dnumberofc"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/editextbg"
+                        android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:id="@+id/numberofc"/>
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:text="Donations to certain funds, charitable institutions" />
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    style="@style/MyTextView"
+                    android:text="Prime Ministers\nRelief Fund" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dprimeministersr"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/editextbg"
+                        android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:id="@+id/primeministersr" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="3dp"
+                    style="@style/MyTextView"
+                    android:text="Chief Ministers\nRelief Fund	" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dchiefministersr"
+                    android:text="0"
+                    style="@style/TextLabel"
+                    android:layout_centerInParent="true"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:theme="@style/TextLabel">
+                    <EditText
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/editextbg"
+                        android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:id="@+id/chiefministersr" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:padding="5dp">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Button"
+                    android:id="@+id/button4" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>
+

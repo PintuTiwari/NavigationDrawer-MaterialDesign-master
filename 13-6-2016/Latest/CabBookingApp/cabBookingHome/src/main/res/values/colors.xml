@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="action_titlebar_color">#0190B8</color>
+    <color name="action_titlebar_color1">#f4e81b</color>
+     <color name="cab_default">#ADD8E6</color>
+     <color name="cab_selected">#00BFFF</color>
+     <color name="update_profile_first">#b20000</color>
+</resources>

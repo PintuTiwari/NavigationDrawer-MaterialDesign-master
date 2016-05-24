@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    
+    
+    >
+     <com.coboltforge.slidemenu.SlideMenu
+        android:id="@+id/slideMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:weightSum="10">
+    
+    <LinearLayout 
+    android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="#00B0FA"
+    
+    >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/Refer_friend"
+        android:textSize="22sp"
+        android:textColor="#fff"
+        android:textStyle="italic"
+        />
+        
+    </LinearLayout>
+    
+    
+<LinearLayout 
+    android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+    android:gravity="center"
+    android:layout_gravity="center"
+    
+    >
+    
+    <ImageButton
+        android:id="@+id/share_by_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:src="@drawable/facebook"
+       android:layout_gravity="center" 
+       android:scaleType="centerInside"
+       android:background="@android:color/transparent"/>
+    
+    
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:visibility="gone"
+    
+    >
+    
+    <ImageButton
+        android:id="@+id/share_by_twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:src="@drawable/twitter"
+       android:layout_gravity="center" 
+       android:scaleType="centerInside"
+       android:background="@android:color/transparent"
+       android:visibility="gone"/>
+    
+    
+</LinearLayout>
+    <LinearLayout 
+    android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+    android:gravity="center"
+    android:layout_gravity="center"
+    
+    >
+    
+    <ImageButton
+        android:id="@+id/share_by_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:src="@drawable/sms"
+       android:layout_gravity="center" 
+       android:scaleType="centerInside"
+       android:background="@android:color/transparent"/>
+    
+    
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+    android:gravity="center"
+    android:layout_gravity="center"
+    
+    >
+    
+    <ImageButton
+        android:id="@+id/share_gplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:src="@drawable/email"
+       android:layout_gravity="center" 
+       android:scaleType="centerInside"
+       android:background="@android:color/transparent"/>
+   
+    
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+    android:gravity="center"
+    android:layout_gravity="center"
+    
+    >
+    
+    <ImageButton
+        android:id="@+id/share_by_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:src="@drawable/gplushare"
+       android:layout_gravity="center" 
+       android:scaleType="centerInside"
+       android:background="@android:color/transparent"
+       android:visibility="invisible"
+       
+       />
+    
+    
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+    android:gravity="center"
+    android:layout_gravity="center"
+    
+    >
+    
+    <com.addthis.ui.views.ATButton
+                android:id="@+id/addthisButton"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dip"
+                android:layout_weight="1" 
+                android:visibility="invisible">
+            </com.addthis.ui.views.ATButton>
+    
+    
+</LinearLayout>
+
+
+   
+
+</LinearLayout>
+</com.coboltforge.slidemenu.SlideMenu>
+</RelativeLayout>

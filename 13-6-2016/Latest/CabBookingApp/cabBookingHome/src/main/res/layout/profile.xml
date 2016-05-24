@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    
+    
+    >
+     <com.coboltforge.slidemenu.SlideMenu
+        android:id="@+id/slideMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:weightSum="10"
+    android:background="#fff"
+    
+    >
+
+    <ProgressBar
+        android:id="@+id/progressBarupdateprofile"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" 
+        android:layout_gravity="center"
+        />
+
+		<WebView 
+		    
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:id="@+id/profile_webview"
+		    android:visibility="gone"
+	    
+	    />
+
+	
+	
+    
+</LinearLayout>
+
+ </com.coboltforge.slidemenu.SlideMenu>
+     
+    
+    </RelativeLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:keepScreenOn="true"
+    
+    
+    >
+     <com.coboltforge.slidemenu.SlideMenu
+        android:id="@+id/slideMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+   
+	
+   
+    <fragment 
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        
+        
+        android:id="@+id/mapfragment">
+        
+        <RelativeLayout
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+       
+        
+       
+        >
+     	<LinearLayout 
+     	    android:layout_alignParentTop="true"
+     	    android:layout_height="wrap_content"
+     	    android:layout_width="fill_parent"
+     	    android:weightSum="11"
+     	   
+     	    android:background="@android:color/transparent"
+     	    android:orientation="horizontal">
+     	    <LinearLayout 
+     	        android:layout_height="fill_parent"
+     	        android:layout_width="0dp"
+     	        android:layout_weight="1"
+     	        android:layout_gravity="center_vertical"
+     	        android:background="@android:color/transparent"
+     	        >
+     	        
+     	    </LinearLayout>
+     	    
+     	    
+     	    <ImageButton  
+     	    android:src="@drawable/yellow_cab"
+            android:id="@+id/yellowcabmapbutton" 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:layout_weight="3"
+            android:scaleType="centerInside"
+            android:padding="0dp"
+            android:clickable="true"
+            android:cropToPadding="true"
+            android:background="@android:color/transparent"
+            
+            >
+     	        
+     	    </ImageButton>
+     	    
+     	     <ImageButton  
+     	    android:src="@drawable/personal_cab_clicked"
+            android:id="@+id/personalcabmapbutton" 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent" 
+            android:layout_weight="3"
+             android:scaleType="centerInside"
+             android:padding="0dp"
+             android:clickable="true"
+            android:cropToPadding="true"
+            android:background="@android:color/transparent"
+            >
+     	         
+     	     </ImageButton>
+     	     <ImageButton  
+     	         android:src="@drawable/limousine"
+            android:id="@+id/limosinemapbutton" 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent" 
+            android:layout_weight="3"
+             android:scaleType="centerInside"
+             android:padding="0dp"
+             android:clickable="true"
+             android:background="@android:color/transparent"
+           
+            ></ImageButton>
+     	      
+     	     <LinearLayout 
+     	        android:layout_height="fill_parent"
+     	        android:layout_width="0dp"
+     	        android:layout_weight="1">
+     	        
+     	    </LinearLayout>
+     	    
+     	    
+     	</LinearLayout>
+     	<LinearLayout 
+     	    android:layout_alignParentBottom="true"
+     	    android:layout_width="fill_parent"
+     	    android:layout_height="wrap_content"
+     	    android:orientation="horizontal"
+     	    android:paddingBottom="5dip"
+     	    android:gravity="center_horizontal"
+     	    
+     	   
+     	    
+     	    
+     	    >
+     	
+     	    <ImageButton 
+     	        android:id="@+id/selectdestinationbutton"
+     	        android:layout_width="wrap_content"
+     	        android:layout_height="fill_parent"
+     	        
+     	        android:layout_gravity="center_horizontal|bottom"
+     	        android:background="@android:color/transparent"
+     	        android:src="@drawable/selectdestination"
+     	    
+             android:padding="0dp"
+             android:clickable="true"
+            android:cropToPadding="true"
+     	        
+     	        />
+     	    	</LinearLayout>
+     	    	
+     	    	  
+     	    	    
+     	</RelativeLayout>
+         
+     	    
+     	    
+     	    
+     
+        
+       </fragment>
+    <!-- layout for cab buttons -->
+    
+    
+     	
+     	<!-- layout for lower buttons -->
+     	
+     	
+     	
+         
+        
+      
+         </com.coboltforge.slidemenu.SlideMenu>
+     <RelativeLayout 
+     	    android:layout_width="wrap_content"
+     	    android:layout_height="wrap_content"
+     	    android:layout_alignParentTop="true"
+     	    android:layout_alignParentRight="true"
+     	    android:background="@android:color/white"
+     	    android:layout_marginTop="80dp"
+             android:layout_marginRight="15dp"
+     	    android:gravity="right"
+     	    
+     	    
+     	    >
+         <ImageButton 
+             
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/refresh_map"
+             android:id="@+id/refresh_map"
+             android:background="@android:color/transparent"
+             
+             android:scaleType="centerInside"/>
+         
+         
+     </RelativeLayout>
+    
+    </RelativeLayout>
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+     <item
+            android:id="@+id/item_home"
+            android:icon="@drawable/home"
+            android:title="@string/item_home"
+	        android:titleCondensed="@string/item_dhome"    >
+            
+         </item>
+     
+         <item
+        android:id="@+id/item_one"
+        android:icon="@drawable/profiles"
+        android:title="@string/item_one"
+        android:titleCondensed="@string/item_done">
+    </item>
+    <item
+        android:id="@+id/item_two"
+        android:icon="@drawable/rides"
+        android:title="@string/item_two"
+        android:titleCondensed="@string/item_dtwo">
+    </item>
+    <item
+        android:id="@+id/item_three"
+        android:icon="@drawable/cabmoney"
+        android:title="@string/item_three"
+        android:titleCondensed="@string/item_dthree">
+    </item>
+   
+     <item
+        android:id="@+id/item_five"
+        android:icon="@drawable/help"
+        android:title="@string/item_five"
+                android:titleCondensed="@string/item_dfive">
+    </item>
+      <item
+        android:id="@+id/item_six"
+        android:icon="@drawable/signout"
+        android:title="@string/item_six"
+                android:titleCondensed="@string/item_dsix">
+    </item>
+        
+        
+    
+    
+</menu>

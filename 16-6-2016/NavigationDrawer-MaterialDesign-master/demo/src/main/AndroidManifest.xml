@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   ~ Copyright 2015 Rudson Lima
+
+   ~ Licensed under the Apache License, Version 2.0 (the "License");
+   ~ you may not use this file except in compliance with the License.
+   ~ You may obtain a copy of the License at
+
+   ~ http://www.apache.org/licenses/LICENSE-2.0
+
+   ~ Unless required by applicable law or agreed to in writing, software
+   ~ distributed under the License is distributed on an "AS IS" BASIS,
+   ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   ~ See the License for the specific language governing permissions and
+   ~ limitations under the License.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.liveo.ndrawer" >
+
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:windowSoftInputMode="stateHidden|adjustPan"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+
+
+        >
+       <!-- <activity
+            android:name=".ui.activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Dark"
+            android:screenOrientation="portrait">-->
+        <activity
+            android:name=".ui.activity.Login"
+            android:theme="@style/nLiveoDrawer"
+            android:windowSoftInputMode="stateVisible|adjustPan"
+            android:label="@string/settings">
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activity.SettingsActivity"
+            android:theme="@style/myTheme"
+            android:label="@string/settings">
+        </activity>
+   <activity
+        android:name=".ui.activity.NavigationActivity"
+       android:theme="@style/myTheme">
+       <!--  android:theme="@style/nLiveoDrawer1"-->
+    </activity>
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:theme="@style/nLiveoDrawer1"
+            android:launchMode="singleTop"
+            android:label="@string/settings">
+        </activity>
+        <activity
+            android:name=".ui.activity.MyDetails"
+            android:theme="@style/myTheme"
+            android:parentActivityName=".ui.activity.MainActivity"
+            android:label="@string/settings1">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ui.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activity.Additionals_Details"
+            android:theme="@style/myTheme"
+            android:parentActivityName=".ui.activity.MainActivity"
+            android:label="@string/Additionals_Details">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ui.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activity.Personal_Details"
+            android:theme="@style/myTheme"
+            android:parentActivityName=".ui.activity.MainActivity"
+            android:label="@string/settings2"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ui.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activity.Family_Details"
+            android:theme="@style/myTheme"
+            android:parentActivityName=".ui.activity.MainActivity"
+            android:label="@string/Family_Details">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ui.activity.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ui.activity.Academic_Details"
+            android:theme="@style/myTheme"
+            android:label="@string/Academic_Details"
+            android:parentActivityName=".ui.activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ui.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activity.Emergency_Contact"
+            android:theme="@style/myTheme"
+            android:parentActivityName=".ui.activity.MainActivity"
+            android:label="@string/Emergency_Contact">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ui.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activity.Employee_Language"
+            android:theme="@style/myTheme"
+            android:parentActivityName=".ui.activity.MainActivity"
+            android:label="@string/Employee_Language">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ui.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activity.Nominee_Details"
+            android:theme="@style/myTheme"
+            android:parentActivityName=".ui.activity.MainActivity"
+            android:label="@string/Nominee_Details">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ui.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activity.Entries_Activity"
+            android:theme="@style/myTheme"
+            android:parentActivityName=".ui.activity.MainActivity"
+
+            android:label="@string/Nominee_Details">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ui.activity.MainActivity" />
+        </activity>
+
+
+        <activity
+            android:name=".ui.activity.Training_Details"
+            android:theme="@style/myTheme"
+            android:parentActivityName=".ui.activity.MainActivity"
+            android:label="@string/Training_Details">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ui.activity.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ui.activity.Joining_Documents"
+            android:theme="@style/myTheme"
+            android:parentActivityName=".ui.activity.MainActivity"
+            android:label="@string/Joining_Documents">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ui.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.activity.Employment_History"
+            android:theme="@style/myTheme"
+            android:parentActivityName=".ui.activity.MainActivity"
+            android:label="@string/Employment_History">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ui.activity.MainActivity" />
+        </activity>
+
+    </application>
+    <!-- android:theme="@style/nLiveoDrawer"-->
+</manifest>

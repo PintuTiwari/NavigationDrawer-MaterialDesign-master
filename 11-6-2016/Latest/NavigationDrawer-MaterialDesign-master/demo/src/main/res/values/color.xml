@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="colorPrimary">#03a9f4</color>
+    <color name="colorbgprofile">#2196f3</color>
+    <color name="colorfontprofile">#3c3c3c</color>
+    <color name="colorPrimaryDark">#0288d1</color>
+
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="textColorPrimaryblack">#000000</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#607d8b</color>
+    <color name="fab_color_1">#607d8b</color>
+    <color name="fab_color_1_muted">#607d8b</color>
+    <color name="fab_color_2">@color/colorPrimary</color>
+    <color name="fab_color_2_muted">@color/colorPrimaryDark</color>
+</resources>

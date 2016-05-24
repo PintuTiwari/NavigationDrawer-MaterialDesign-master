@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+ <!--   <include
+        layout="@layout/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+
+    <!-- This DrawerLayout has two children at the root  -->
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- This LinearLayout represents the contents of the screen  -->
+     <!--   <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+
+        </LinearLayout>-->
+        <FrameLayout
+            android:id="@+id/content_frame1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:fitsSystemWindows="true">
+
+            <include layout="@layout/toolbar1" />
+            <!-- Main layout -->
+            <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+        <!-- The navigation drawer that comes from the left -->
+        <!-- Note that `android:layout_gravity` needs to be set to 'start' -->
+
+        <ExpandableListView
+            android:id="@+id/lvExp"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="@color/nliveo_white"
+            android:childDivider="#00000000"
+            android:animateLayoutChanges="true"
+            android:dividerHeight="0dp">
+        </ExpandableListView>
+        <!--android:divider="@color/nliveo_blue_gray_alpha_colorPrimaryDark"
+             android:choiceMode="singleChoice"
+            android:dividerHeight="1dp"
+            android:childDivider="@color/nliveo_blue_gray_alpha_colorPrimaryDark"-->
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

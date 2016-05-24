@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/nliveo_blue_colorPrimary">
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:text="HR View Update"
+            android:layout_gravity="center"
+            android:background="@drawable/hrview"
+            android:textColor="@color/nliveo_white"
+            android:id="@+id/hrupdate" />
+      <!--  <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="right"
+            app:menu_labels_ellipsize="end"
+            app:menu_labels_singleLine="true"
+            fab:fab_icon="@drawable/editeicon"
+            app:menu_fab_label="Menu label" />-->
+
+    </android.support.v7.widget.Toolbar>
+
+
+  <!--  <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu1"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:layout_gravity="right"
+        app:layout_anchor="@+id/appbar"
+        android:src="@drawable/edite"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:layout_anchorGravity="bottom|right|end" />-->
+   <!-- <com.github.clans.fab.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu1"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        app:layout_anchor="@+id/appbar"
+        android:src="@mipmap/edit_hr_icon"
+        app:fab_colorNormal="@color/nliveo_blue_colorPrimary"
+        app:fab_colorPressed="@color/nliveo_blue_colorAccent"
+        app:fab_colorRipple="@color/nliveo_blue_colorPrimaryDark"
+        android:layout_gravity="bottom|right"/>
+-->
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/scrollView_list"
+        android:layout_marginTop="150dp"
+        tools:context=".MainActivity">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_liner"
+            android:layout_below="@+id/toolbar"
+            android:paddingLeft="30dp"
+            android:focusableInTouchMode="true"
+            android:layout_marginBottom="20dp"
+            android:paddingRight="30dp">
+
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="30dp"
+        android:layout_margin="10dp">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/menu1"
+            android:paddingRight="10dp"
+            android:paddingBottom="30dp"
+            android:paddingLeft="10dp"
+            app:layout_anchor="@+id/appbar"
+            android:src="@mipmap/edit_hr_icon"
+            app:fab_colorNormal="@color/nliveo_blue_colorPrimary"
+            app:fab_colorPressed="@color/nliveo_blue_colorAccent"
+            app:fab_colorRipple="@color/nliveo_blue_colorPrimaryDark"
+            android:layout_gravity="top|right"
+            android:gravity="right"
+           />
+    </LinearLayout>
+
+</RelativeLayout>

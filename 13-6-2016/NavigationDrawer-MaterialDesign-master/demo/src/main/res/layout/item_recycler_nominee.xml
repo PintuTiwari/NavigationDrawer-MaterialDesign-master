@@ -1,0 +1,860 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:cardview="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/activity_left_margin"
+        android:layout_marginRight="@dimen/activity_rigt_margin"
+        android:background="@color/white"
+
+        android:layout_marginBottom="6dp">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+            <!--  android:paddingRight="@dimen/activity_rigt_margin"
+            android:paddingLeft="@dimen/activity_left_margin"-->
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--  <LinearLayout
+                      xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:padding="10dp"
+                      android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:layout_height="wrap_content">
+                      <android.support.design.widget.FloatingActionButton
+                          android:id="@+id/edit"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          app:fab_size="mini"
+                          app:theme="@style/MyFloatingButton"
+                          android:src="@mipmap/edite"
+                          android:layout_marginLeft="190dp"
+                          app:fab_label="fbgfvbgf" />
+
+                          <android.support.design.widget.FloatingActionButton
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:id="@+id/delete"
+                              android:layout_marginLeft="10dp"
+                              app:layout_anchor="@+id/appbar"
+                              app:theme="@style/MyFloatingButton1"
+                              android:src="@mipmap/cancel"                            android:layout_gravity="bottom|right"/>
+                  </LinearLayout>-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="right">
+                    <!--  <android.support.design.widget.FloatingActionButton
+                          android:id="@+id/edit"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          app:fab_size="mini"
+                          android:layout_weight="0.9"
+                          android:gravity="right"
+                          android:layout_gravity="right"
+                          app:theme="@style/MyFloatingButton"
+                          android:src="@mipmap/ic_edit"
+                          app:rippleColor="@color/nliveo_blue_alpha_colorPrimaryDark"
+                          app:fab_label="fbgfvbgf" />
+  -->
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:fab_size="mini"
+                        android:src="@mipmap/ic_edit"
+                        app:fab_colorNormal="@color/white"
+                        app:fab_colorPressed="@color/nliveo_blue_colorAccent"
+                        app:fab_colorRipple="@color/nliveo_blue_alpha_colorPrimaryDark"
+
+                        app:fab_label="Menu item 1" />
+
+                    <!--   <android.support.design.widget.FloatingActionButton
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/delete"
+                           android:layout_marginLeft="10dp"
+                           app:layout_anchor="@+id/appbar"
+                           android:layout_weight="0.1"
+                           app:theme="@style/MyFloatingButton1"
+                           app:fab_size="mini"
+                           app:fab_colorPressed="@color/primary_pressed"
+                           app:fab_colorRipple="@color/ripple"
+
+                           app:rippleColor="@color/nliveo_blue_alpha_colorPrimaryDark"
+                           android:src="@mipmap/cancel">
+                   </android.support.design.widget.FloatingActionButton>-->
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:fab_size="mini"
+                        android:src="@mipmap/ic_close"
+                        app:fab_label="Menu item 1"
+                        app:fab_colorNormal="@color/primary"
+                        app:fab_colorPressed="@color/primary_dark"
+                        app:fab_colorRipple="@color/primary_darker" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/RelativeLayout01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/cardtitel1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="Name: "
+                        android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle"
+                        />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Degree: "
+                        android:textAppearance="@style/MyTheme.ActionBar.TextStyle"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/RelativeLayout02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="Address: "
+                        android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle"
+                        />
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Year of Passing: "
+                        android:textAppearance="@style/MyTheme.ActionBar.TextStyle"
+
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/RelativeLayout03"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="Relation: "
+                        android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/relation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Institution Name: "
+                        android:textAppearance="@style/MyTheme.ActionBar.TextStyle"
+
+                        />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="Date of Birth	: "
+                        android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/dateofbirth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Grade/Class	: "
+                        android:textAppearance="@style/MyTheme.ActionBar.TextStyle" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/RelativeLayout04"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/cardtitel4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="Age: "
+                        android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/ageforfamily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Grade/Class	: "
+                        android:textAppearance="@style/MyTheme.ActionBar.TextStyle" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/employeehistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/activity_left_margin"
+        android:layout_marginRight="@dimen/activity_rigt_margin"
+        android:background="@color/white"
+        android:layout_marginBottom="6dp">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="right">
+                <!--  <android.support.design.widget.FloatingActionButton
+                      android:id="@+id/edit"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      app:fab_size="mini"
+                      android:layout_weight="0.9"
+                      android:gravity="right"
+                      android:layout_gravity="right"
+                      app:theme="@style/MyFloatingButton"
+                      android:src="@mipmap/ic_edit"
+                      app:rippleColor="@color/nliveo_blue_alpha_colorPrimaryDark"
+                      app:fab_label="fbgfvbgf" />
+-->
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/editforemployment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fab_size="mini"
+                    android:src="@mipmap/ic_edit"
+                    app:fab_colorNormal="@color/white"
+                    app:fab_colorPressed="@color/nliveo_blue_colorAccent"
+                    app:fab_colorRipple="@color/nliveo_blue_alpha_colorPrimaryDark"
+
+                    app:fab_label="Menu item 1" />
+
+                <!--   <android.support.design.widget.FloatingActionButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/delete"
+                       android:layout_marginLeft="10dp"
+                       app:layout_anchor="@+id/appbar"
+                       android:layout_weight="0.1"
+                       app:theme="@style/MyFloatingButton1"
+                       app:fab_size="mini"
+                       app:fab_colorPressed="@color/primary_pressed"
+                       app:fab_colorRipple="@color/ripple"
+
+                       app:rippleColor="@color/nliveo_blue_alpha_colorPrimaryDark"
+                       android:src="@mipmap/cancel">
+               </android.support.design.widget.FloatingActionButton>-->
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/deleteforemplyoment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fab_size="mini"
+                    android:src="@mipmap/ic_close"
+                    app:fab_label="Menu item 1"
+                    app:fab_colorNormal="@color/primary"
+                    app:fab_colorPressed="@color/primary_dark"
+                    app:fab_colorRipple="@color/primary_darker" />
+
+            </LinearLayout>
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Company Name: "
+                    android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle"
+                    >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/companyname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Degree: "
+                    android:textAppearance="@style/MyTheme.ActionBar.TextStyle">
+
+                </TextView>
+
+            </RelativeLayout>
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Position: "
+                    android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle"
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Degree: "
+                    android:textAppearance="@style/MyTheme.ActionBar.TextStyle">
+                </TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="From Date	: "
+                    android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle"
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/fromdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Degree: "
+                    android:textAppearance="@style/MyTheme.ActionBar.TextStyle">
+                </TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="To Date	: "
+                    android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle"
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/todate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Degree: "
+                    android:textAppearance="@style/MyTheme.ActionBar.TextStyle">
+                </TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Age: "
+                    android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle"
+                    >
+                </TextView>
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Degree: "
+                    android:textAppearance="@style/MyTheme.ActionBar.TextStyle">
+                </TextView>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:cardview="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_viewtranning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/activity_left_margin"
+        android:layout_marginRight="@dimen/activity_rigt_margin"
+        android:layout_marginBottom="6dp">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--  android:paddingRight="@dimen/activity_rigt_margin"
+            android:paddingLeft="@dimen/activity_left_margin"-->
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="right">
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/editfortraning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:fab_size="mini"
+                        android:src="@mipmap/ic_edit"
+                        app:fab_colorNormal="@color/white"
+                        app:fab_colorPressed="@color/nliveo_blue_colorAccent"
+                        app:fab_colorRipple="@color/nliveo_blue_alpha_colorPrimaryDark"
+                        app:fab_label="Menu item 1" />
+
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/deletefortraning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:fab_size="mini"
+                        android:src="@mipmap/ic_close"
+                        app:fab_label="Menu item 1"
+                        app:fab_colorNormal="@color/primary"
+                        app:fab_colorPressed="@color/primary_dark"
+                        app:fab_colorRipple="@color/primary_darker" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="Training Name: "
+                        android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle"
+                        />
+
+                    <TextView
+                        android:id="@+id/training_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Degree: "
+                        android:textAppearance="@style/MyTheme.ActionBar.TextStyle"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="Date of Completion: "
+                        android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle"
+                        />
+
+                    <TextView
+                        android:id="@+id/date_ofcompletion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Year of Passing: "
+                        android:textAppearance="@style/MyTheme.ActionBar.TextStyle" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="Certification Number: "
+                        android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle" />
+
+                    <TextView
+                        android:id="@+id/certification_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Institution Name: "
+                        android:textAppearance="@style/MyTheme.ActionBar.TextStyle"
+
+                        />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="Institute: "
+                        android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle" />
+
+                    <TextView
+                        android:id="@+id/institute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="institute:"
+                        android:textAppearance="@style/MyTheme.ActionBar.TextStyle" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:cardview="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_viewnominee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- Cost Label -->
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5d5d5d"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:text="Name: " >
+                    </TextView>
+                    <!-- Price Label -->
+                    <TextView
+                        android:id="@+id/name_nominee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5d5d5d"
+                        android:textStyle="normal"
+                        android:text="Name: "
+                        android:gravity="left">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- Cost Label -->
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5d5d5d"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:text="Address: " >
+                    </TextView>
+                    <!-- Price Label -->
+                    <TextView
+                        android:id="@+id/address_nominee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5d5d5d"
+                        android:textStyle="normal"
+                        android:gravity="left">
+                    </TextView>
+                </LinearLayout>
+
+
+
+                <!-- Linear layout for cost and price Cost: Rs.100 -->
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- Cost Label -->
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5d5d5d"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:text="Nominee Relation With Member: " >
+                    </TextView>
+                    <!-- Price Label -->
+                    <TextView
+                        android:id="@+id/relation_nominee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5d5d5d"
+                        android:textStyle="normal"
+                        android:gravity="left">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- Cost Label -->
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5d5d5d"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:text="Amount Paid to Nominee(%)" >
+                    </TextView>
+                    <!-- Price Label -->
+                    <TextView
+                        android:id="@+id/amountpaid_nominee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5d5d5d"
+                        android:textStyle="normal"
+                        android:gravity="left">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- Cost Label -->
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5d5d5d"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:text="Date of Birth: " >
+                    </TextView>
+                    <!-- Price Label -->
+                    <TextView
+                        android:id="@+id/dob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5d5d5d"
+                        android:textStyle="normal"
+                        android:gravity="left">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- Cost Label -->
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5d5d5d"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:text="Name and Address of Guardian" >
+                    </TextView>
+                    <!-- Price Label -->
+                    <TextView
+                        android:id="@+id/address_guardin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5d5d5d"
+                        android:textStyle="normal"
+                        android:gravity="left">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- Cost Label -->
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5d5d5d"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:text="Age" >
+                    </TextView>
+                    <!-- Price Label -->
+                    <TextView
+                        android:id="@+id/age_nominee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5d5d5d"
+                        android:textStyle="normal"
+                        android:gravity="center">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!-- Cost Label -->
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5d5d5d"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:text="Action: " >
+                    </TextView>
+                    <TableRow android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <!-- Price Label -->
+
+                    <Button
+                        android:id="@+id/edit_nominee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5d5d5d"
+                        android:textStyle="bold"
+                        android:text="Edit"
+                        android:layout_marginLeft="5dp">
+                    </Button>
+                    <Button
+                        android:id="@+id/deletenominee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#5d5d5d"
+                        android:textStyle="bold"
+                        android:text="Delete"
+                        android:layout_marginLeft="5dp">
+                    </Button>
+                    </TableRow>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+

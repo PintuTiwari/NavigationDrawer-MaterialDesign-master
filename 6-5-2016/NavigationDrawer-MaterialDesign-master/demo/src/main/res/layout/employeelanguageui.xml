@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/layout_mainlanguage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel"
+
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/language"
+                    android:layout_marginTop="10dp"
+                    android:hint="Language"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+  <android.support.design.widget.TextInputLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+
+                 android:layout_marginBottom="8dp">
+                 <CheckBox
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/canread"
+                     android:layout_marginTop="10dp"
+                     android:hint="Can Read"
+                     />
+             </android.support.design.widget.TextInputLayout>-->
+
+              <android.support.design.widget.TextInputLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="8dp">
+                 <CheckBox
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/canwrite"
+                     android:layout_marginTop="10dp"
+                     android:hint="Can Write"
+                     />
+
+             </android.support.design.widget.TextInputLayout>
+
+             <android.support.design.widget.TextInputLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="8dp">
+                 <CheckBox
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/canspeak"
+                     android:layout_marginTop="10dp"
+                     android:hint="Can Speak"
+                     />
+             </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>
+
+

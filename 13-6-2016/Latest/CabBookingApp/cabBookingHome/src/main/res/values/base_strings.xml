@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="email_id">Email id</string>
+    <string name="register_button">Register</string>
+    <string name="register">Register Me !!!</string>
+    <string name="register_login">Already Registered ?</string>
+    <string name="forgot">Forgot Password !!</string>
+    <string name="register_me">Register me !!</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="signup">Sign up</string>
+    <!-- Strings to be shown on UI -->
+    <string name="please_wait">please wait..</string>
+    <string name="name">Name</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="Email">Email Id</string>
+    <string name="contact">Contact number</string>
+    <string name="user_type">UserType</string>
+    <string name="agent">Agent</string>
+    <string name="guide">Guide</string>
+    <string name="availability">Im Available </string>
+    <string name="regular">Regular</string>
+    <string name="on_weekends">on weekends</string>
+    <string name="custom">Custom</string>
+    <string name="state">Im Available for</string>
+    <string name="forgot_msg">Enter your email to recover your password</string>
+    <string name="submit">Submit</string>
+    <string name="login">Login</string>
+    <string name="forgot_login">Login here</string>
+  
+   
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+	
+    <!-- Strings for Error Messages -->
+    <string name="name_error">Name cannot be Blank !!</string>
+    <string name="email_error">Email cannot be Blank !!</string>
+    <string name="email_error_correct">Please Provide Correct Email Address !!</string>
+    <string name="pass_error">Password cannot be Blank !!</string>
+    <string name="pass_len_error">Password must be atleast 6 characters</string>
+    <string name="confirm_pass_error">Password do not match !!</string>
+    <string name="contact_error">Contact cannot be Blank !!</string>
+    <string name="state_error">Please select state !!</string>
+    <string name="otp_error">OTP cannot be Blank !!</string>
+    <string name="availability_error">Please select availability !!</string>
+    <string name="activity_base_alert_message_network_exception">Unable to get data from Network. Check your Internet connectivity.</string>
+    <string name="activity_base_alert_message_parsing_exception">Improper message from server.Please try again</string>
+    <string name="activity_base_alert_message_timeout_exception">Server not responding. Please try again</string>
+    <string name="activity_base_alert_message_error">Some error occured,Please try again</string>
+
+    <!-- String for Server Exception Class -->
+    <string name="server_exception_error_message_general">Error in server</string>
+    <string name="server_exception_error_message_server_error">Internal error in server</string>
+    <string name="server_exception_error_message_resource_not_found">Requested resource does not exist on server</string>
+    <string name="server_exception_error_message_forbidden">Request resources is forbidden</string>
+    <string name="error">Error !!!</string>
+    <string name="reg_success">Registered Successfully..</string>
+
+    <string-array name="tablist">
+        <item>Today\'s Task</item>
+        <item>All Tasks</item>
+    </string-array>
+
+    <string name="DeviceType">DeviceType</string>
+    <string name="AdType">AdType</string>
+    <string name="okLabel">OK</string>
+    
+    <string name="loading">Loading</string>
+    <string name="counter">0</string>
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+    <string name="options_clear">Clear</string>
+    <string name="options_exit">Exit</string>
+    
+    <string name="gcm_internet_error">Internet Connection Error</string>
+     <string name="gcm_internet_error_message">Please connect to working Internet connection</string>
+     <string name="gcm_already_register_message">Your device registred with GCM</string>
+     <string name="email_not_entered">Please Enter Email-Id</string>
+     <string name="email_not_valid">Please Enter Valid Email-Id</string>
+     <string name="enter_password">Please Enter password</string>
+     <string name="confirm">confirm</string>
+     <string name="reject">reject</string>
+	
+
+</resources>

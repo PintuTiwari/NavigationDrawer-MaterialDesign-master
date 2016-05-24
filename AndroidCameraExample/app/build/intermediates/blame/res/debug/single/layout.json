@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\Daily_Backup\\May\\AndroidCameraExample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "E:\\Daily_Backup\\May\\AndroidCameraExample\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\Daily_Backup\\May\\AndroidCameraExample\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_main.xml",
+        "source": "E:\\Daily_Backup\\May\\AndroidCameraExample\\app\\src\\main\\res\\layout\\fragment_main.xml"
+    }
+]

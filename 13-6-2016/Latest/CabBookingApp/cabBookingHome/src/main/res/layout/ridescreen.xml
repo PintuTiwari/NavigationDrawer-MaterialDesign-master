@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    
+    
+    >
+     <com.coboltforge.slidemenu.SlideMenu
+        android:id="@+id/slideMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="10"
+    android:orientation="horizontal"
+    android:background="#eee"
+    >
+    
+  
+      
+     <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="10"
+        android:weightSum="10"
+        android:orientation="vertical"
+        
+        
+        > 
+             <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+            ></LinearLayout>
+             
+             <LinearLayout 
+                 android:layout_height="0dp"
+                 android:layout_width="fill_parent"
+                 android:layout_weight="0.8"
+                 android:weightSum="10"
+                 android:orientation="horizontal"
+                 android:background="#fff"
+                 android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        >	
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:src="@drawable/destination" />
+             
+             <TextView 
+                 android:id="@+id/current_loc_Ride"
+                 android:layout_width="0dp"
+                 android:layout_height="fill_parent"
+                 android:layout_weight="9"
+                 
+                 android:text="@string/current_location"
+                 android:gravity="center_vertical|start"
+                 android:paddingLeft="8dip"
+                 android:textColor="#000"
+                 
+                 
+                 />
+             
+             </LinearLayout>
+             
+             
+             <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+            ></LinearLayout>
+             <LinearLayout 
+                 android:layout_height="0dp"
+                 android:layout_width="fill_parent"
+                 android:layout_weight="0.8"
+                 android:weightSum="10"
+                 android:orientation="horizontal"
+                 android:background="#fff"
+                 android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        >	
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:src="@drawable/cab" />
+             <TextView 
+                 android:id="@+id/cab_type_Ride"
+                 android:layout_width="0dp"
+                 android:layout_height="fill_parent"
+                 android:layout_weight="9"
+                 android:text="@string/cabtype"
+                 android:gravity="center_vertical|start"
+                 android:paddingLeft="8dip"
+                 android:textColor="#000"
+                 
+                 
+                 
+                 />
+             </LinearLayout>
+        <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+            ></LinearLayout>
+        <LinearLayout 
+                 android:layout_height="0dp"
+                 android:layout_width="fill_parent"
+                 android:layout_weight="0.8"
+                 android:weightSum="10"
+                 android:orientation="horizontal"
+                 android:background="#fff"
+                 android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        >	
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:src="@drawable/source" />
+             <TextView 
+                 android:id="@+id/destination_Ride"
+                 android:layout_width="0dp"
+                 android:layout_height="fill_parent"
+                 android:layout_weight="9"
+                 android:background="#fff"
+                 android:text="@string/destination"
+                 android:gravity="center_vertical|start"
+                 android:paddingLeft="8dip"
+                 android:textColor="#000"
+                 
+                 />
+             </LinearLayout>
+             <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+             />
+         <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+            >
+             <TextView 
+                 android:layout_width="0dp"
+                 android:layout_height="fill_parent"
+                 android:layout_weight="3"
+                 android:text="@string/distance"
+                 android:textSize="16sp"
+                 android:textColor="#000"
+                 android:textStyle="bold"
+                 />
+             <TextView 
+                 android:id="@+id/distance_Ride"
+                 android:layout_width="0dp"
+                 android:layout_height="fill_parent"
+                 android:layout_weight="2.5"
+                 android:text="990 mi "
+                 android:textSize="16sp"
+                 android:textColor="#000"
+              
+                 />
+              <TextView 
+                 android:layout_width="0dp"
+                 android:layout_height="fill_parent"
+                 android:layout_weight="2.8"
+                 android:text="@string/permile"
+                 android:textSize="16sp"
+                 android:textColor="#000"
+                 android:textStyle="bold"
+                 />
+              <TextView 
+                  android:id="@+id/fare_Ride"
+                 android:layout_width="0dp"
+                 android:layout_height="fill_parent"
+                 android:layout_weight="1.7"
+                 android:text="$15"
+                 android:textSize="16sp"
+                 android:textColor="#000"
+              
+                 />
+             
+             
+             
+         </LinearLayout>
+         <LinearLayout 
+             android:id="@+id/ridenowlaterbuttonlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+          android:orientation="horizontal"
+          android:weightSum="10" 
+            >
+         <ImageButton 
+             android:layout_weight="5"
+             android:layout_width="0dp"
+             android:layout_height="fill_parent"
+             android:background="@android:color/transparent"
+             android:src="@drawable/ride_now"
+             android:scaleType="centerInside"
+             android:id="@+id/ride_now_IMGbutton"
+             android:visibility="visible"
+             android:layout_gravity="center"
+             />
+          <ImageButton 
+              android:id="@+id/ride_later_IB_Ride"
+             android:layout_weight="5"
+             android:layout_width="0dp"
+             android:layout_height="fill_parent"
+             android:background="@android:color/transparent"
+             android:src="@drawable/ride_laters"
+             android:scaleType="centerInside"
+             android:visibility="visible"
+              android:layout_gravity="center"
+             
+             
+             />
+           <ImageButton 
+             android:layout_weight="5"
+             android:layout_width="0dp"
+             android:layout_height="fill_parent"
+             android:background="@android:color/transparent"
+             android:src="@drawable/confirm"
+             android:scaleType="centerInside"
+             android:id="@+id/confirm_IMGbutton"
+             android:visibility="gone"
+             
+             />
+          <ImageButton 
+              android:id="@+id/reject_IB_Ride"
+             android:layout_weight="5"
+             android:layout_width="0dp"
+             android:layout_height="fill_parent"
+             android:background="@android:color/transparent"
+             android:src="@drawable/reject"
+             android:scaleType="centerInside"
+               android:visibility="gone"
+             
+             
+             />
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:weightSum="4"
+            android:id="@+id/gettingdetailsLL"
+            android:visibility="visible"
+            android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+            
+            >
+         <ProgressBar 
+             android:id="@+id/cab_details_progress"
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_weight="3.5"
+             android:visibility="visible"
+             android:layout_gravity="center"
+             
+             
+             
+             />
+         <TextView 
+             android:id="@+id/cab_details_progress_textview"
+             android:layout_width="wrap_content"
+             android:layout_height="0dp"
+             android:layout_weight="0.5"
+             android:text="@string/cab_details_progress_text"
+             android:textColor="#000"
+              android:textSize="17sp"
+             android:layout_gravity="center_horizontal"
+             />
+         </LinearLayout>
+         <LinearLayout 
+         
+         android:id="@+id/cab_details_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+            android:weightSum="10"
+            android:orientation="horizontal"
+         	android:visibility="gone"
+         	android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+         	
+            >
+            <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_weight="5"
+                android:weightSum="10"
+                
+                
+                >
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:text="@string/cab_reach_time"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical|start"
+                    />
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:textSize="16sp"
+                    android:text="@string/driver_name"
+                    android:textColor="#000"
+                    android:gravity="center_vertical|start"
+                    />
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:textSize="16sp"
+                    android:text="@string/contact"
+                    android:textColor="#000"
+                    android:gravity="center_vertical|start"
+                    />
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:textSize="16sp"
+                    android:text="@string/cab_num"
+                    android:textColor="#000"
+                    android:gravity="center_vertical|start"
+                    />
+                
+            </LinearLayout>  
+                
+               <LinearLayout 
+               
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_weight="5"
+                android:weightSum="10"
+                
+                
+                >
+                    <TextView 
+                        android:id="@+id/cab_reach_time_Ride"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:text="15 Min"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical|start"
+                    />
+                <TextView 
+                    android:id="@+id/driver_name_Ride"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:textSize="16sp"
+                    android:layout_weight="2"
+                    android:text="Mr. XYZ"
+                    android:textColor="#000"
+                    android:gravity="center_vertical|start"
+                    />
+                <TextView 
+                    android:id="@+id/driver_contact_num_Ride"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:textSize="16sp"
+                    android:text="+41123456789"
+                    android:textColor="#000"
+                    android:gravity="center_vertical|start"
+                    />
+                <TextView 
+                    android:id="@+id/Cab_num_Ride"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:text="US 123456AZ"
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical|start"
+                    />
+                   
+                   
+                   
+                   
+               </LinearLayout> 
+            
+             
+             
+        </LinearLayout>
+        
+        
+        
+        
+        
+        </LinearLayout>
+    
+        
+        
+        
+        
+        
+   
+    
+    </LinearLayout>
+
+</com.coboltforge.slidemenu.SlideMenu>
+     
+    
+    </RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    
+    
+    >
+     <com.coboltforge.slidemenu.SlideMenu
+        android:id="@+id/slideMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    >
+    
+    
+    <ListView 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:id="@+id/listview"
+        android:dividerHeight="2dp"
+        android:minHeight="120dp"
+        
+        
+        ></ListView>
+    
+    <LinearLayout 
+         android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+    <ImageButton 
+       android:layout_width="0dp"
+       android:layout_weight="1"
+       android:layout_height="wrap_content"
+        android:id="@+id/done"
+        android:text="button"
+        android:src="@drawable/done"
+        android:scaleType="centerInside"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center"
+        />
+     <ImageButton 
+       android:layout_width="0dp"
+       android:layout_weight="1"
+       android:layout_height="wrap_content"
+        android:id="@+id/cancel"
+        android:text="button"
+        android:src="@drawable/cancel"
+        android:scaleType="centerInside"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center"
+        />
+    </LinearLayout>
+</LinearLayout>
+    
+ </com.coboltforge.slidemenu.SlideMenu>
+     
+    
+    </RelativeLayout>
+

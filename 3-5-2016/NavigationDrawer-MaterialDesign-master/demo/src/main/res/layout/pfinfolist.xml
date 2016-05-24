@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:card_view="http://schemas.android.com/apk/res-auto"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:background="@color/white"
+	android:layout_height="match_parent">
+
+	<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:cardview="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/card_viewpayinfo"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="@dimen/activity_left_margin"
+		android:layout_marginRight="@dimen/activity_rigt_margin"
+		android:layout_marginBottom="6dp">
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+
+			android:orientation="vertical">
+			<!--  android:paddingRight="@dimen/activity_rigt_margin"
+            android:paddingLeft="@dimen/activity_left_margin"-->
+			<LinearLayout
+				xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+
+
+
+				<RelativeLayout
+					xmlns:android="http://schemas.android.com/apk/res/android"
+					android:id="@+id/RelativeLayout01"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:padding="5dp">
+
+					<TextView
+						android:id="@+id/cardtitel1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentLeft="true"
+						android:text="Month: "
+						android:fontFamily="@string/fontPath"
+						android:maxLines="12"
+						android:minLines="1"
+						android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle"
+						/>
+
+					<TextView
+						android:id="@+id/monthsalary"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:maxLines="12"
+						android:fontFamily="@string/fontPath"
+						android:minLines="1"
+						android:textAppearance="@style/MyTheme.ActionBar.TextStyle"
+						/>
+
+				</RelativeLayout>
+
+				<RelativeLayout
+					xmlns:android="http://schemas.android.com/apk/res/android"
+					android:id="@+id/RelativeLayout02"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:padding="5dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentLeft="true"
+						android:text="Year: "
+						android:fontFamily="@string/fontPath"
+						android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle"
+						/>
+
+					<TextView
+						android:id="@+id/yearsalary"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:maxLines="12"
+						android:minLines="1"
+						android:fontFamily="@string/fontPath"
+
+						android:textAppearance="@style/MyTheme.ActionBar.TextStyle"
+
+						/>
+
+				</RelativeLayout>
+
+				<RelativeLayout
+					xmlns:android="http://schemas.android.com/apk/res/android"
+					android:id="@+id/RelativeLayout03"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:padding="5dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentLeft="true"
+						android:text="Employee Contribution\nPer Month:"
+						android:fontFamily="@string/fontPath"
+						android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle"
+
+						/>
+
+
+					<TextView
+						android:id="@+id/employeecontributionpermonth"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:maxLines="12"
+						android:minLines="1"
+						android:fontFamily="@string/fontPath"
+						android:textAppearance="@style/MyTheme.ActionBar.TextStyle" />
+
+				</RelativeLayout>
+				<RelativeLayout
+					xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:padding="5dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentLeft="true"
+						android:text="Employee Contribution\nCumulative PF"
+						android:fontFamily="@string/fontPath"
+						android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle"
+
+						/>
+
+					<TextView
+						android:id="@+id/employeecontributioncumulativ"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:maxLines="12"
+						android:minLines="1"
+						android:fontFamily="@string/fontPath"
+						android:textAppearance="@style/MyTheme.ActionBar.TextStyle" />
+
+				</RelativeLayout>
+				<RelativeLayout
+					xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:padding="5dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentLeft="true"
+						android:text="EPF(Rs)"
+						android:fontFamily="@string/fontPath"
+						android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle" />
+
+					<TextView
+						android:id="@+id/epetv"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:maxLines="12"
+						android:minLines="1"
+						android:fontFamily="@string/fontPath"
+						android:textAppearance="@style/MyTheme.ActionBar.TextStyle" />
+
+				</RelativeLayout>
+				<RelativeLayout
+					xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:padding="5dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentLeft="true"
+						android:text="Employer Contribution\nCumulative EPF"
+						android:fontFamily="@string/fontPath"
+						android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle" />
+
+					<TextView
+						android:id="@+id/EmployerCumulativeepf"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:maxLines="12"
+						android:minLines="1"
+						android:fontFamily="@string/fontPath"
+						android:textAppearance="@style/MyTheme.ActionBar.TextStyle" />
+
+				</RelativeLayout>
+				<RelativeLayout
+					xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:padding="5dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentLeft="true"
+						android:text="Employer Contribution\nFPF (RS)"
+						android:fontFamily="@string/fontPath"
+						android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle" />
+
+					<TextView
+						android:id="@+id/employercontributionepf"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:maxLines="12"
+						android:minLines="1"
+						android:fontFamily="@string/fontPath"
+						android:textAppearance="@style/MyTheme.ActionBar.TextStyle" />
+
+				</RelativeLayout>
+
+				<RelativeLayout
+					xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:padding="5dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentLeft="true"
+						android:text="Cumulative FPF"
+						android:fontFamily="@string/fontPath"
+						android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle" />
+
+					<TextView
+						android:id="@+id/cumulativeepf"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:maxLines="12"
+						android:minLines="1"
+						android:fontFamily="@string/fontPath"
+						android:textAppearance="@style/MyTheme.ActionBar.TextStyle" />
+
+				</RelativeLayout>
+				<RelativeLayout
+					xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:padding="5dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentLeft="true"
+						android:text="Total (RS)"
+						android:fontFamily="@string/fontPath"
+						android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle" />
+
+					<TextView
+						android:id="@+id/totalrs"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:maxLines="12"
+						android:minLines="1"
+						android:fontFamily="@string/fontPath"
+						android:textAppearance="@style/MyTheme.ActionBar.TextStyle" />
+
+				</RelativeLayout>
+
+				<RelativeLayout
+					xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:padding="5dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentLeft="true"
+						android:text="VPF"
+						android:fontFamily="@string/fontPath"
+						android:textAppearance="@style/MyTheme.ActionBar.TitleTextStyle" />
+
+					<TextView
+						android:id="@+id/vpf"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:maxLines="12"
+						android:minLines="1"
+						android:fontFamily="@string/fontPath"
+						android:textAppearance="@style/MyTheme.ActionBar.TextStyle" />
+
+				</RelativeLayout>
+
+			</LinearLayout>
+		</LinearLayout>
+	</android.support.v7.widget.CardView>
+
+</LinearLayout>
+
+
+
+
+
+
+	<!--
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="top|center"
+        android:orientation="horizontal">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical">
+            &lt;!&ndash; Name Label &ndash;&gt;
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#dc6800"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingTop="6dip"
+                android:text="Employee Contribution"
+                android:paddingBottom="2dip" />
+
+            &lt;!&ndash;<TextView
+                android:id="@+id/desciption"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#acacac"
+                android:paddingBottom="2dip">
+            </TextView>&ndash;&gt;
+            &lt;!&ndash; Linear layout for cost and price Cost: Rs.100 &ndash;&gt;
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                &lt;!&ndash; Cost Label &ndash;&gt;
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:text="Month: " >
+                </TextView>
+                &lt;!&ndash; Price Label &ndash;&gt;
+                <TextView
+                    android:id="@+id/month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#acacac"
+                    android:textStyle="normal"
+                    android:text="May"
+                    android:gravity="left">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                &lt;!&ndash; Cost Label &ndash;&gt;
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:text="Year: " >
+                </TextView>
+                &lt;!&ndash; Price Label &ndash;&gt;
+                <TextView
+                    android:id="@+id/year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#acacac"
+                    android:textStyle="normal"
+                    android:text="2015"
+                    android:gravity="left">
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                &lt;!&ndash; Cost Label &ndash;&gt;
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:text="Per Month:" >
+                </TextView>
+                &lt;!&ndash; Price Label &ndash;&gt;
+                <TextView
+                    android:id="@+id/netpay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#acacac"
+                    android:textStyle="normal"
+                    android:text="1,384"
+                    android:gravity="left">
+                </TextView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                &lt;!&ndash; Cost Label &ndash;&gt;
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:text="Cumulative: " >
+                </TextView>
+                &lt;!&ndash; Price Label &ndash;&gt;
+                <TextView
+                    android:id="@+id/action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#acacac"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="normal"
+                    android:text="4949"
+                    android:gravity="left">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                &lt;!&ndash; Cost Label &ndash;&gt;
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:text="EPF(Rs): " >
+                </TextView>
+                &lt;!&ndash; Price Label &ndash;&gt;
+                <TextView
+                    android:id="@+id/epfrs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#acacac"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="normal"
+                    android:text="6858"
+                    android:gravity="left">
+                </TextView>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                &lt;!&ndash; Cost Label &ndash;&gt;
+                <TextView
+                    android:id="@+id/employer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#dc6800"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:paddingTop="6dip"
+                    android:text="Employer Contribution"
+                    android:paddingBottom="2dip">
+                </TextView>
+                &lt;!&ndash; Price Label &ndash;&gt;
+
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                &lt;!&ndash; Cost Label &ndash;&gt;
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:text="Cumulative" >
+                </TextView>
+                &lt;!&ndash; Price Label &ndash;&gt;
+                <TextView
+                    android:id="@+id/cumulativeemployer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#acacac"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="normal"
+                    android:text="200"
+                    android:gravity="left">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                &lt;!&ndash; Cost Label &ndash;&gt;
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:text="EPF(Rs): " >
+                </TextView>
+                &lt;!&ndash; Price Label &ndash;&gt;
+                <TextView
+                    android:id="@+id/epfrsemployer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#acacac"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="normal"
+                    android:text="6888"
+                    android:gravity="left">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                &lt;!&ndash; Cost Label &ndash;&gt;
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:text="Cumulative: " >
+                </TextView>
+                &lt;!&ndash; Price Label &ndash;&gt;
+                <TextView
+                    android:id="@+id/cumulativeemployer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#acacac"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="normal"
+                    android:text="599"
+                    android:gravity="left">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                &lt;!&ndash; Cost Label &ndash;&gt;
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:text="Total(Rs): " >
+                </TextView>
+                &lt;!&ndash; Price Label &ndash;&gt;
+                <TextView
+                    android:id="@+id/totalemployer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#acacac"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="normal"
+                    android:text="1,3838"
+                    android:gravity="left">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                &lt;!&ndash; Cost Label &ndash;&gt;
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5d5d5d"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:text="VPF" >
+                </TextView>
+                &lt;!&ndash; Price Label &ndash;&gt;
+                <TextView
+                    android:id="@+id/vpfemployer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#acacac"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="normal"
+                    android:text="588"
+                    android:gravity="left">
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>-->
